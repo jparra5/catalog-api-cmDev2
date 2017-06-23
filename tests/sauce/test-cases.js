@@ -30,6 +30,8 @@ var desired = JSON.parse(process.env.DESIRED || '{browserName: "chrome"}');
 desired.name = 'CatalogAPI with ' + desired.browserName;
 desired.tags = ['CatalogAPI'];
 
+// Adding edge cases to these test cases.
+
 describe('CatalogAPI(' + desired.browserName + ')', function() {
     var browser;
     var allPassed = true;
