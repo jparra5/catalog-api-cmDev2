@@ -28,5 +28,7 @@ app.post('/items', items.create);
 app.put('/items/:id', items.update);
 app.delete('/items/:id', items.remove);
 
+// Enable dynamic routing here...
+
 app.listen(appEnv.port, appEnv.bind);
 console.log('App started on ' + appEnv.bind + ':' + appEnv.port);
